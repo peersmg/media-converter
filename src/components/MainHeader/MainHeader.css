@@ -1,4 +1,36 @@
 .title {
   color: white;
   font-size: large;
+  float: left;
+}
+
+.titlebar {
+  -webkit-user-select: none;
+  -webkit-app-region: drag;
+}
+
+.exitbutton {
+  color: white;
+  font-size: large;
+  -webkit-app-region: no-drag;
+  float: right;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.exitbutton:hover {
+  background-color: rgba(200, 200, 200, 0.1);
+}
+
+.minimizebutton {
+  color: white;
+  font-size: large;
+  -webkit-app-region: no-drag;
+  float: right;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.minimizebutton:hover {
+  background-color: rgba(200, 200, 200, 0.1);
 }

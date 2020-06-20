@@ -5,7 +5,14 @@ const url = require("url");
 const isDev = require("electron-is-dev");
 
 function createWindow() {
-  mainWindow = new BrowserWindow({ width: 900, height: 680 });
+  mainWindow = new BrowserWindow({
+    width: 900,
+    height: 680,
+    frame: false,
+    webPreferences: {
+      nodeIntegration: true,
+    },
+  });
   mainWindow.loadURL(
     isDev
       ? "http://localhost:3000"

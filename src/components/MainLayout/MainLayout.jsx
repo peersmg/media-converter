@@ -17,9 +17,9 @@ const MainLayout = ({ children }) => {
   };
 
   return (
-    <Layout>
+    <Layout style={{ minHeight: "100vh" }}>
       <MainHeader />
-      <Layout style={{ minHeight: "100vh" }}>
+      <Layout>
         <Sider collapsible collapsed={collapsed} onCollapse={onCollapse}>
           <Menu theme="dark" defaultSelectedKeys={["1"]} mode="inline">
             <Menu.Item key="1" icon={<FileImageOutlined />}>

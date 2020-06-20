@@ -12,6 +12,10 @@ function createWindow() {
     webPreferences: {
       nodeIntegration: true,
     },
+    show: false,
+  });
+  mainWindow.once("ready-to-show", () => {
+    mainWindow.show();
   });
   mainWindow.loadURL(
     isDev

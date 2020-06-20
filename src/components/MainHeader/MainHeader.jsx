@@ -4,11 +4,11 @@ import { MinusOutlined, CloseOutlined } from "@ant-design/icons";
 import "antd/dist/antd.css";
 import "./MainHeader.css";
 
-const electron = window.require("electron");
-
 const { Header } = Layout;
 
 const MainHeader = () => {
+  const electron = window.require("electron");
+
   return (
     <Header className="titlebar">
       <div className="title">Media Converter</div>

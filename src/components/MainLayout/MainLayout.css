@@ -1,0 +1,12 @@
+.logo {
+  height: 32px;
+  margin: 16px;
+  color: white;
+}
+
+.site-layout .site-layout-background {
+  background: #fff;
+}
+[data-theme="dark"] .site-layout .site-layout-background {
+  background: #141414;
+}

@@ -1,5 +1,4 @@
 import React from "react";
-import "./App.css";
 import { HashRouter, Route } from "react-router-dom";
 import ImagePage from "./pages/ImagePage";
 import VideoPage from "./pages/VideoPage";

@@ -13,6 +13,8 @@ function createWindow() {
       nodeIntegration: true,
     },
     show: false,
+    minHeight: 600,
+    minWidth: 900,
   });
   mainWindow.once("ready-to-show", () => {
     mainWindow.show();

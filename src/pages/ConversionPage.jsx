@@ -1,5 +1,8 @@
+import React from "react";
+import DragDrop from "../components/DragDrop/DragDrop";
+
 const ConversionPage = () => {
-  return "Conversion page";
+  return <DragDrop />;
 };
 
 export default ConversionPage;

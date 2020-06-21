@@ -8,12 +8,9 @@ const { Header } = Layout;
 
 const MainHeader = () => {
   return (
-    <Header
-      className="titlebar"
-      style={{ position: "fixed", overflow: "auto", top: 0, width: "100vw" }}
-    >
+    <Header className="titlebar">
       <div className="title">Media Converter</div>
-      <WindowButtons />
+      {window.require ? <WindowButtons /> : null}
     </Header>
   );
 };

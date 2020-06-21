@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Layout, Menu } from "antd";
 import { FileImageOutlined, VideoCameraOutlined } from "@ant-design/icons";
 import "./MainLayout.css";
@@ -11,27 +11,15 @@ const { Content, Footer, Sider } = Layout;
 const MainLayout = ({ children }) => {
   const [collapsed, setCollapsed] = useState(false);
 
-  const onCollapse = (collapsed) => {
-    console.log(collapsed);
-    setCollapsed(collapsed);
-  };
+  useEffect(() => {
+    window.require ? setCollapsed(true) : setCollapsed(false);
+  }, []);
 
   return (
     <Layout style={{ minHeight: "100vh", userSelect: "none" }}>
       <MainHeader />
       <Layout>
-        <Sider
-          collapsible
-          collapsed={true}
-          trigger={null}
-          style={{
-            overflow: "auto",
-            height: "100vh",
-            position: "fixed",
-            left: 0,
-            top: 25,
-          }}
-        >
+        <Sider collapsible collapsed={collapsed} trigger={null}>
           <Menu theme="dark" defaultSelectedKeys={["1"]} mode="inline">
             <Menu.Item key="1" icon={<FileImageOutlined />}>
               <Link to="/">Images</Link>
@@ -45,13 +33,11 @@ const MainLayout = ({ children }) => {
           <Content
             style={{
               margin: "16px 16px",
-              paddingLeft: 85,
-              paddingTop: 30,
             }}
           >
             <div
               className="site-layout-background"
-              style={{ padding: 24, height: 400 }}
+              style={{ padding: 24, height: "80vh", overflow: "auto" }}
             >
               {children}
             </div>

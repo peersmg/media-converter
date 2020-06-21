@@ -1,5 +1,5 @@
 const ImagePage = () => {
-  return "Image Page";
+  return "Image page";
 };
 
 export default ImagePage;

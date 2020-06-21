@@ -8,6 +8,11 @@ In the project directory, you can run:
 
 Launches the electron app in development mode.<br />
 
+### `yarn react-start`
+
+Runs the react app in development mode.<br />
+Open http://localhost:3000 to view it in the browser.<br />
+
 ### `yarn test`
 
 Launches the test runner in the interactive watch mode.<br />

@@ -1,36 +1,17 @@
 .title {
   color: white;
-  font-size: large;
+  font-size: 17px;
   float: left;
+  height: 10px;
+  font-weight: lighter;
+  letter-spacing: 1px;
 }
 
 .titlebar {
   -webkit-user-select: none;
   -webkit-app-region: drag;
-}
-
-.exitbutton {
-  color: white;
-  font-size: large;
-  -webkit-app-region: no-drag;
-  float: right;
+  padding-right: 0px;
   padding-left: 20px;
-  padding-right: 20px;
-}
-
-.exitbutton:hover {
-  background-color: rgba(200, 200, 200, 0.1);
-}
-
-.minimizebutton {
-  color: white;
-  font-size: large;
-  -webkit-app-region: no-drag;
-  float: right;
-  padding-left: 20px;
-  padding-right: 20px;
-}
-
-.minimizebutton:hover {
-  background-color: rgba(200, 200, 200, 0.1);
+  height: 25px;
+  line-height: 25px;
 }
